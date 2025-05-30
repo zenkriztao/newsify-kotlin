@@ -47,22 +47,48 @@ Before running the app, ensure that you have the following installed:
 - JDK 8 or higher
 - Kotlin 1.5 or higher
 
-### Installation Steps
+# Newsify - Kotlin News App
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/zenkriztao/newsify-kotlin.git
-````
+A Kotlin-based Android app that fetches real-time news articles using the News API.
 
-2. Open the project in Android Studio.
+## Installation Steps
 
-3. Sync the Gradle files and build the project.
+### 1. Clone the Repository
 
-4. Run the project on an Android Emulator or a physical device.
+Clone the repository to your local machine using the following command:
 
-5. If you want to set up your own API key (for API calls), please visit [News API](https://newsapi.org/) and obtain a free API key.
+```bash
+git clone https://github.com/zenkriztao/newsify-kotlin.git
+```
 
-### Gradle Dependencies
+### 2. Open the Project in Android Studio
+
+1. Open **Android Studio**.
+2. Choose **Open an existing project**.
+3. Select the folder where you cloned the repository.
+
+### 3. Sync Gradle Files
+
+After opening the project, sync the Gradle files and let Android Studio build the project.
+
+### 4. Run the Project
+
+You can now run the project on either an Android Emulator or a physical device.
+
+### 5. Set Up Your Own API Key (Optional)
+
+To use your own API key for fetching news data:
+
+1. Visit [News API](https://newsapi.org/) and sign up to get a free API key.
+2. Add your API key to the `strings.xml` file:
+
+   ```xml
+   <string name="api_key">YOUR_API_KEY_HERE</string>
+   ```
+
+---
+
+## Gradle Dependencies
 
 Ensure the following dependencies are included in your `build.gradle`:
 
@@ -79,37 +105,45 @@ dependencies {
 }
 ```
 
-### API Key Configuration
+---
+
+## API Key Configuration
 
 1. Go to [News API](https://newsapi.org/) and sign up for an API key.
-2. Add your API key to the `strings.xml` file:
+2. Add your API key in the `strings.xml` file:
 
    ```xml
    <string name="api_key">YOUR_API_KEY_HERE</string>
    ```
 
+---
+
 ## 🧑‍💻 Contributing
 
-We welcome contributions! If you want to contribute, please follow these steps:
+We welcome contributions to the project! To contribute, please follow these steps:
 
 1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/your-feature`).
+2. Create a new branch for your feature (`git checkout -b feature/your-feature`).
 3. Make your changes and commit them (`git commit -am 'Add your feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Create a new Pull Request.
+4. Push the changes to your fork (`git push origin feature/your-feature`).
+5. Create a Pull Request for review.
 
-Please follow the Kotlin and Jetpack Compose best practices when contributing.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📑 Acknowledgements
-
-* **News API**: The data source for real-time news articles. You can find more information at [News API Documentation](https://newsapi.org/docs/endpoints/everything).
-* **Jetpack Compose**: Official Android toolkit for building native UIs in a declarative manner.
-* **Kotlin**: The language that powers this project, providing concise and powerful syntax.
+Please ensure your code follows **Kotlin** and **Jetpack Compose** best practices for easy integration.
 
 ---
 
-🧑‍💻 **Built by** [Zenkriztao](https://github.com/zenkriztao) - Kotlin enthusiast with a passion for building fast, smooth, and intuitive mobile applications.
+## 📝 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📑 Acknowledgements
+
+* **News API**: Provides real-time news articles. [News API Documentation](https://newsapi.org/docs/endpoints/everything)
+* **Jetpack Compose**: Android's toolkit for building modern UIs in a declarative style.
+* **Kotlin**: The programming language used in this project for its concise and expressive syntax.
+
+---
+
+🧑‍💻 **Built by** [Zenkriztao](https://github.com/zenkriztao) - A Kotlin enthusiast passionate about creating fast, smooth, and intuitive mobile apps.
